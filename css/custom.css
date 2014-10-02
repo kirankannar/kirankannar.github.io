@@ -1,9 +1,46 @@
+
+.img-circle.oracle{
+	
+width: 25%;
+    
+}
+.img-circle.paypal{
+	padding-top: 7%;
+width: 50%;
+    
+}
+.pub{
+	width:5%;
+}
+
+div.one{
+
+/*
+TODO for back color if required
+background-color:#ff0; */
+}
+div.two{
+/*
+border-top-style: solid;
+    border-top- width: 5px;
+
+TODO for back color if required
+background-color:#ff0; */
+}
+div.three{
+
+/*
+TODO for back color if required
+background-color:#ff0; */
+}
+
 h1.name {
 	color:#0cf;
 	opacity:1;
 	font-size: 3.5em;
 	font-weight: 800;
 	letter-spacing: 4px;
+	margin-top: 10%;
 	font-family: 'Gloria Hallelujah', sans-serif; }
 
 
@@ -11,10 +48,34 @@ p.tagline{
 	font-size:1.2em;
 	color:#000;opacity:.6;
 	line-height:1.25em;
-	margin: 0 5em 0;
+	/*margin: 0 5em 0; */
 	font-family: 'Gloria Hallelujah' cursive;}
 
+p.desctext{
+	font-size:1.2em;
+	color:#000;opacity:.6;
+	line-height:1.25em;
+	/*margin: 0 5em 0; */
+	font-family: 'Droid Sans', sans-serif;}
 
+h3.desctext{
+	font-size:2em;
+	color:#000;opacity:.6;
+	line-height:1.25em; 
+	font-family: 'Droid Sans', sans-serif;}
+
+.imagetitle{
+	font-size:1.5em;
+	color:#000;opacity:.6;
+	line-height:1.25em;
+	font-weight: bold;
+	/*margin: 0 5em 0; */
+	font-family: 'Droid Sans', sans-serif;
+}
+.kbdtext{
+	margin:0;
+font-family: 'Droid Sans', sans-serif;	
+}
 a.imgsmall{
 	/*TODO do something here */
 }
