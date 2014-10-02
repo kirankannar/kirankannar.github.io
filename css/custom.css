@@ -1,0 +1,20 @@
+h1.name {
+	color:#0cf;
+	opacity:1;
+	font-size: 3.5em;
+	font-weight: 800;
+	letter-spacing: 4px;
+	font-family: 'Gloria Hallelujah', sans-serif; }
+
+
+p.tagline{
+	font-size:1.2em;
+	color:#000;opacity:.6;
+	line-height:1.25em;
+	margin: 0 5em 0;
+	font-family: 'Gloria Hallelujah' cursive;}
+
+
+a.imgsmall{
+	/*TODO do something here */
+}
