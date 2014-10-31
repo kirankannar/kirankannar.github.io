@@ -8,3 +8,9 @@ $(document).ready(function() {
         $("div.project-tab>div.project-tab-content").eq(index).addClass("active");
     });
 });
+
+
+$("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("active");
+});
