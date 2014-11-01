@@ -170,31 +170,38 @@ $("#to_projects").click(function(e) {
 
 $("#btnContactUs").click(function(e) {
 
+
+
 var from =  $("#email").val();
 var sub = $("#subject").val();
 var name = $("#name").val();
 var msg = $("#message").val();
 var msg_p  = msg  + ' ' +name;
-$.ajax({
+
+alert("YES");
+var json = {
   type: "POST",
   url: "https://mandrillapp.com/api/1.0/messages/send.json",
   data: {
     'key': 'jrD1SkCG5Jwa7AkSwzq7fw',
-    'message': {
-      'from_email': from,
-      'to': [
-          {
+    'message': { 
+        'to': [ {
             'email': 'kirankannarkk.lris@gmail.com',
             'name': 'Kiran Kannar',
             'type': 'to'
           }
-        ],
-      'autotext': 'true',
-      'subject': subject,
-      'html': msg_p
+            ]
+
+        }
     }
-  }
- }).done(function(response) {
+    };
+json.data.message['from_email'] = from;
+json.data.message['autotext'] = 'true';
+json.data.message['subject'] = sub;
+json.data.message['html'] = msg_p;
+alert(JSON.stringify(json));
+
+$.ajax(json).done(function(response) {
    console.log(response); // if you're into that sorta thing
  });
 
