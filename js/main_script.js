@@ -201,6 +201,13 @@ json.data.message['subject'] = sub;
 json.data.message['html'] = msg_p;
 
 $.ajax(json).done(function(response) {
+   
+   var x = response[0]["status"];
+   if(x == "sent")
+        alert("Sent!");
+    else
+        alert("Failed!");
+
    console.log(response); // if you're into that sorta thing
  });
 
