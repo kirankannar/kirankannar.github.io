@@ -127,6 +127,36 @@ $("#to_home").click(function(e) {
         $("#contact").hide();
         
 });
+$("#to_bio").click(function(e) {
+        
+        $("#home").hide();
+        $("#bio").show();
+        $("#work").hide();
+        $("#projects").hide();
+        $("#research").hide();
+        $("#contact").hide();
+        
+});
+$("#to_work").click(function(e) {
+        
+        $("#home").hide();
+        $("#bio").hide();
+        $("#work").show();
+        $("#projects").hide();
+        $("#research").hide();
+        $("#contact").hide();
+        
+});
+$("#to_projects").click(function(e) {
+        
+        $("#home").hide();
+        $("#bio").hide();
+        $("#work").hide();
+        $("#projects").show();
+        $("#research").hide();
+        $("#contact").hide();
+        
+});
 
 
 
