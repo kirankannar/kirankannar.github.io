@@ -167,6 +167,16 @@ $("#to_projects").click(function(e) {
         $("#contact").hide();
         
 });
+$("#to_research").click(function(e) {
+        
+        $("#home").hide();
+        $("#bio").hide();
+        $("#work").hide();
+        $("#projects").hide();
+        $("#research").show();
+        $("#contact").hide();
+        
+});
 
 $("#btnContactUs").click(function(e) {
 
