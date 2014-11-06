@@ -1,3 +1,20 @@
+var textclassifier = { "img": "null", 
+                       "title": "Document Classification using Backpropagation Networks",
+                       "details": " to be updated soon;to be updated soon;to be updated soon;to be updated soon;to be updated soon",
+                       "date" : "Fall 2013" };
+var ads = { "img": "null", 
+                       "title": "Alumni Database System",
+                       "details": " to be updated soon;to be updated soon;to be updated soon;to be updated soon;to be updated soon",
+                       "date" : "Spring 2012" };
+var chatroom = { "img": "null", 
+                       "title": "Chat Room",
+                       "details": " to be updated soon;to be updated soon;to be updated soon;to be updated soon;to be updated soon",
+                       "date" : "Spring 2012" };
+
+
+var ProjectDetails = [ textclassifier,ads, chatroom];
+
+
 $(document).ready(function() {
     $("div.tab-menu>div.list-group>a").click(function(e) {
         e.preventDefault();
@@ -14,6 +31,13 @@ $("#menu-toggle").click(function(e) {
         e.preventDefault();
         $("#wrapper").toggleClass("active");
         
+});
+
+$("#pro1").click (function(e){
+var json = ProjectDetails[0];
+
+$("#ProjectContent").append( '<img src=" img\neural_network.gif">Hello</img>');
+
 });
 
 $("#1").click(function(e) {
