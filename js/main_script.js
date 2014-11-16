@@ -13,7 +13,7 @@ var chatroom = { "img": "null",
 
 
 var ProjectDetails = [ textclassifier,ads, chatroom];
-
+var prev_project_active=1; /*state variable to initialize class =active */
 
 $(document).ready(function() {
     $("div.tab-menu>div.list-group>a").click(function(e) {
@@ -26,13 +26,7 @@ $(document).ready(function() {
     });
 });
 
-
-$("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("active");
-        
-});
-
+/* Identify which project title was clicked and render appropriate text */
 $(".pro-button"). click(function(e){
 var index = parseInt($(this).attr("id").match(/pro(\d+)/)[1], 10);
 var jsonToRender = ProjectDetails[index-1];
@@ -42,6 +36,19 @@ var contents ='<p>' + jsonToRender.details + '</p>';
 $("#project-image").html(image);
 $("#project-title").html(title);
 $("#project-contents").html(contents);
+
+/*TODO change this to binary search; much more efficient*/
+for (var i=1; i<=ProjectDetails.length; i++)
+{
+    if(i== prev_project_active) {
+        var id_rem_class = 'pro'+i;
+        $(document.getElementById(id_rem_class).parentNode).removeClass('active'); /* we have found required class */
+        break;
+    }
+}
+var Clickedid =e.target.id;
+$(document.getElementById(Clickedid).parentNode).addClass('active');
+ prev_project_active=index; 
 });
 
 

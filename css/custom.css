@@ -7,7 +7,6 @@ body{
     height: 100%;/* force the BODY element to match the height of the HTML element */
 }
 
-
 .img-circle.oracle{
 	
 width: 25%;
@@ -89,6 +88,18 @@ font-family: 'Droid Sans', sans-serif;
 a.imgsmall{
 	/*TODO do something here */
 }
+
+#project-ul>li  {
+	
+}
+#project-ul>li.active {
+	background-color: #00385c;
+}
+/*
+#project-ul>li.active>a {
+	color: #ffffff;
+}*/
+
 
 /*----------*/
 
