@@ -1,4 +1,4 @@
-var textclassifier = { "img": "null", 
+var textclassifier = { "img": "neural_network.gif", 
                        "title": "Document Classification using Backpropagation Networks",
                        "details": " to be updated soon;to be updated soon;to be updated soon;to be updated soon;to be updated soon",
                        "date" : "Fall 2013" };
@@ -33,12 +33,17 @@ $("#menu-toggle").click(function(e) {
         
 });
 
-$("#pro1").click (function(e){
-var json = ProjectDetails[0];
-
-$("#ProjectContent").append( '<img src=" img\neural_network.gif">Hello</img>');
-
+$(".pro-button"). click(function(e){
+var index = parseInt($(this).attr("id").match(/pro(\d+)/)[1], 10);
+var jsonToRender = ProjectDetails[index-1];
+var image = '<img align="center" src="img\\' + jsonToRender.img + '" style="height:100px; width:100px;"/>';
+var title = '<h3 align="center">' + jsonToRender.title + '</h3>';
+var contents ='<p>' + jsonToRender.details + '</p>';
+$("#project-image").html(image);
+$("#project-title").html(title);
+$("#project-contents").html(contents);
 });
+
 
 $("#1").click(function(e) {
         
@@ -78,6 +83,15 @@ $("#4").click(function(e) {
         $("#projects").show();
         $("#research").hide();
         $("#contact").hide();
+
+        /*render default text from project[0] */
+        var jsonToRender = ProjectDetails[0];
+        var image = '<img align="center" src="img\\' + jsonToRender.img + '" style="height:100px; width:100px;"/>';
+        var title = '<h3 align="center">' + jsonToRender.title + '</h3>';
+        var contents ='<p>' + jsonToRender.details + '</p>';
+        $("#project-image").html(image);
+        $("#project-title").html(title);
+        $("#project-contents").html(contents);
         
 });
 $("#5").click(function(e) {
