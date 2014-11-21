@@ -1,18 +1,42 @@
 var textclassifier = { "img": "neural_network.gif", 
                        "title": "Document Classification using Backpropagation Networks",
-                       "details": " to be updated soon;to be updated soon;to be updated soon;to be updated soon;to be updated soon",
-                       "date" : "Fall 2013" };
+                       "details": "Built and trained a neural network to classify document text to science and politics.",
+                       "date" : "Fall 2013" ,
+                        "link" : "https://github.com/KannarKK/Document-Classifer" };
 var ads = { "img": "null", 
                        "title": "Alumni Database System",
-                       "details": " to be updated soon;to be updated soon;to be updated soon;to be updated soon;to be updated soon",
-                       "date" : "Spring 2012" };
+                       "details": "Fondly called as alumninet, this repository project provides a method to query for complex relational \
+                       queries like <i>Alumni of CSE, RV College who graduated in 2014 and then pursued MS in CS at Stanford and now \
+                       work at Google </i>. <br/> Three kinds of profiles (users of this repository) are allowed to register: alumni, \
+                       students and professor, based on which the interactions allowed with the repository vary.",
+                       "date" : "Spring 2012" ,
+                        "link": "https://github.com/KannarKK/alumninet"};
 var chatroom = { "img": "null", 
                        "title": "Chat Room",
-                       "details": " to be updated soon;to be updated soon;to be updated soon;to be updated soon;to be updated soon",
-                       "date" : "Spring 2012" };
+                       "details": " This project was built to understand the limitations and fallacies of using Remote Method \
+                       Invocation methodology over common programming methodologies like sockets for building chat applications.",
+                       "date" : "Spring 2012",
+                       "link" : "https://github.com/KannarKK/RMI-Chat-Server" };
+
+var quicklib = { "img": "null", 
+                       "title": "QuickLib",
+                       "details": " To be updated soon;  To be updated soon;  To be updated soon; ",
+                       "date" : "Spring 2012",
+                       "link" : 0 };
+var cro = { "img": "null", 
+                       "title": "Function Generator using Cathode Ray Oscilloscope",
+                       "details": " To be updated soon;  To be updated soon;  To be updated soon; ",
+                       "date" : "Fall 2011",
+                       "link" : 0 };
+var twopass = { "img": "null", 
+                       "title": "2 pass assemblers",
+                       "details": " To be updated soon;  To be updated soon;  To be updated soon; ",
+                       "date" : "Fall 2011",
+                       "link" : 0 };
+    
 
 
-var ProjectDetails = [ textclassifier,ads, chatroom];
+var ProjectDetails = [ textclassifier,ads, chatroom,quicklib,cro, twopass];
 var prev_project_active=1; /*state variable to initialize class =active */
 
 $(document).ready(function() {
@@ -30,12 +54,25 @@ $(document).ready(function() {
 $(".pro-button"). click(function(e){
 var index = parseInt($(this).attr("id").match(/pro(\d+)/)[1], 10);
 var jsonToRender = ProjectDetails[index-1];
-var image = '<img align="center" src="img\\' + jsonToRender.img + '" style="height:100px; width:100px;"/>';
+//console.log(JSON.stringify(jsonToRender));
+
+//var image = '<img align="center" src="img\\' + jsonToRender.img + '" style="height:100px; width:100px;"/>';
 var title = '<h3 align="center">' + jsonToRender.title + '</h3>';
+var date = '<p align="center"><kbd>' + jsonToRender.date + '</kbd></p>';
 var contents ='<p>' + jsonToRender.details + '</p>';
-$("#project-image").html(image);
+
+$("#project-date").html(date);
 $("#project-title").html(title);
 $("#project-contents").html(contents);
+
+if(jsonToRender.link!=0)
+{
+   // console.log(jsonToRender.link);
+var codeLink = '<p> <b>Code at </b><a href = "'+ jsonToRender.link + '">' + jsonToRender.link + '</a></p>';
+$("#project-code").html(codeLink);
+}
+else
+ $("#project-code").html("");
 
 /*TODO change this to binary search; much more efficient*/
 for (var i=1; i<=ProjectDetails.length; i++)
@@ -93,13 +130,21 @@ $("#4").click(function(e) {
 
         /*render default text from project[0] */
         var jsonToRender = ProjectDetails[0];
-        var image = '<img align="center" src="img\\' + jsonToRender.img + '" style="height:100px; width:100px;"/>';
+        //var image = '<img align="center" src="img\\' + jsonToRender.img + '" style="height:100px; width:100px;"/>';
+        var date = '<p align="center"><kbd>' + jsonToRender.date + '</kbd></p>';
         var title = '<h3 align="center">' + jsonToRender.title + '</h3>';
         var contents ='<p>' + jsonToRender.details + '</p>';
-        $("#project-image").html(image);
+        $("#project-date").html(date);
         $("#project-title").html(title);
         $("#project-contents").html(contents);
-        
+        if(jsonToRender.link!=null)
+        {
+            var codeLink = '<p> <b>Code at </b><a href = "'+ jsonToRender.link + '">' + jsonToRender.link + '</a></p>';
+            $("#project-code").html(codeLink);
+        }
+        else
+            $("#project-code").html("");
+                
 });
 $("#5").click(function(e) {
         
