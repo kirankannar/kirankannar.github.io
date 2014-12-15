@@ -95,11 +95,18 @@ a.imgsmall{
 #project-ul>li.active {
 	background-color: #00385c;
 }
+#project-ul>li.focus {
+	background-color: #00385c;
+}
 /*
 #project-ul>li.active>a {
 	color: #ffffff;
-}*/
+}
 
+.well {
+
+	background-color: rgba(255,220,22,0.5)
+} */
 
 /*----------*/
 

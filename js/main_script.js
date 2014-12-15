@@ -19,18 +19,22 @@ var chatroom = { "img": "null",
                        "link" : "https://github.com/KannarKK/RMI-Chat-Server" };
 
 var quicklib = { "img": "null", 
-                       "title": "QuickLib",
-                       "details": " To be updated soon;  To be updated soon;  To be updated soon; ",
+                       "title": "QuickLib - Android Application",
+                       "details": "When you have a central offline repository of books, (like the way it is maintained at our college),\
+                        you would find it painstaking to go to college to check if a book is available at library. <br/> Quicklib offers\
+                        remote access to the repository and allows you to track the books you need.\
+                        <br/><em> This project was implemented and demonstrated as POC. </em>",
                        "date" : "Spring 2012",
                        "link" : 0 };
 var cro = { "img": "null", 
                        "title": "Function Generator using Cathode Ray Oscilloscope",
-                       "details": " To be updated soon;  To be updated soon;  To be updated soon; ",
+                       "details": "Microcontroller based project to generate various waveforms of different frequencies on a \
+                       Cathode Ray Oscilloscope (CRO). ",
                        "date" : "Fall 2011",
-                       "link" : 0 };
+                       "link" : "https://github.com/KannarKK/function-generator" };
 var twopass = { "img": "null", 
                        "title": "2 pass assemblers",
-                       "details": " To be updated soon;  To be updated soon;  To be updated soon; ",
+                       "details": "Implemented a basic instruction set 2 pass assembler for 8086 architecture.",
                        "date" : "Fall 2011",
                        "link" : 0 };
     
@@ -68,7 +72,7 @@ $("#project-contents").html(contents);
 if(jsonToRender.link!=0)
 {
    // console.log(jsonToRender.link);
-var codeLink = '<p> <b>Code at </b><a href = "'+ jsonToRender.link + '">' + jsonToRender.link + '</a></p>';
+var codeLink = '<p> <b>Code at </b><a target="_blank" href = "'+ jsonToRender.link + '">' + jsonToRender.link + '</a></p>';
 $("#project-code").html(codeLink);
 }
 else
@@ -139,7 +143,7 @@ $("#4").click(function(e) {
         $("#project-contents").html(contents);
         if(jsonToRender.link!=null)
         {
-            var codeLink = '<p> <b>Code at </b><a href = "'+ jsonToRender.link + '">' + jsonToRender.link + '</a></p>';
+            var codeLink = '<p> <b>Code at </b><a target="_blank" href = "'+ jsonToRender.link + '">' + jsonToRender.link + '</a></p>';
             $("#project-code").html(codeLink);
         }
         else
