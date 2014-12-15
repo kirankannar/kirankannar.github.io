@@ -1,3 +1,4 @@
+
 html{
     min-height:80%;/* make sure it is at least as tall as the viewport */
     position:relative;
@@ -5,7 +6,20 @@ html{
 body{
     padding-top: 70px;
     height: 100%;/* force the BODY element to match the height of the HTML element */
+    font-size: 15px;
+    /*background: transparent url('../img/back1.png'); */
+
 }
+#dpback{
+	/*opacity: 0.6;  */
+}
+#dp {
+	
+	height: 13em;
+	width: 10em;
+	
+}
+
 
 .img-circle.oracle{
 	
@@ -49,7 +63,7 @@ h1.name {
 	font-size: 3.5em;
 	font-weight: 800;
 	letter-spacing: 4px;
-	margin-top: 10%;
+	margin-top: 6%;
 	font-family: 'Gloria Hallelujah', sans-serif; }
 
 
@@ -98,6 +112,10 @@ a.imgsmall{
 #project-ul>li.focus {
 	background-color: #00385c;
 }
+#quoraLogo {
+padding-bottom: 0.9em;
+}
+
 /*
 #project-ul>li.active>a {
 	color: #ffffff;
