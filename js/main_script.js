@@ -43,7 +43,17 @@ var twopass = { "img": "null",
 var ProjectDetails = [ textclassifier,ads, chatroom,quicklib,cro, twopass];
 var prev_project_active=1; /*state variable to initialize class =active */
 
+/*disable right clicks or view source */
+window.oncontextmenu = function () {
+   return false;
+}
+document.onkeydown = function (e) { 
+    if (window.event.keyCode == 123 ||  e.button==2)    
+    return false;
+}
+
 $(document).ready(function() {
+
     $("div.tab-menu>div.list-group>a").click(function(e) {
         e.preventDefault();
         $(this).siblings('a.active').removeClass("active");
@@ -52,6 +62,7 @@ $(document).ready(function() {
         $("div.project-tab>div.project-tab-content").removeClass("active");
         $("div.project-tab>div.project-tab-content").eq(index).addClass("active");
     });
+
 });
 
 /* Identify which project title was clicked and render appropriate text */

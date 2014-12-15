@@ -11,19 +11,22 @@ body{
 
 }
 #dpback{
-	/*opacity: 0.6;  */
-}
-#dp {
-	
-	height: 13em;
-	width: 10em;
-	
-}
+	/*opacity: 0.8; */
+    width:10em;
+    height:10em;
+    border-radius:50%;
+    background:url("../img/dp3.jpg");
+     background-size: cover;
+    display:block;
+    background-position-y:25% ;
+    box-shadow: 	2px 2px 7px rgb(184, 42, 8);
+   }
 
 
 .img-circle.oracle{
 	
 width: 25%;
+
     
 }
 .img-circle.paypal{
