@@ -38,9 +38,15 @@ var twopass = { "img": "null",
                        "date" : "Fall 2011",
                        "link" : 0 };
     
+var checkers = { "img": "null", 
+                       "title": "Checkers",
+                       "details": "Built a Checkers game environment to provide 2 player functionality as well as\
+                        playing against a computer. <br> The highlight was automated moves by the computer\
+                        Unfortunately, the code was built across Turbo C++ environment, making it un-portable :(",
+                       "date" : "2009",
+                       "link" : 0 };
 
-
-var ProjectDetails = [ textclassifier,ads, chatroom,quicklib,cro, twopass];
+var ProjectDetails = [ textclassifier,ads, chatroom,quicklib,cro, twopass, checkers];
 var prev_project_active=1; /*state variable to initialize class =active */
 
 /*disable right clicks or view source */

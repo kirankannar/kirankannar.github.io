@@ -6,9 +6,12 @@ html{
 body{
     padding-top: 70px;
     height: 100%;/* force the BODY element to match the height of the HTML element */
-    /*font-size: 15px;
+    /*font-size: 15px; 
     background: transparent url('../img/back1.png'); */
 
+}
+#navb{
+	/*opacity: 0.6;*/
 }
 #dpback{
 	/*opacity: 0.8; */
