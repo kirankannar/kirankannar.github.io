@@ -10,6 +10,9 @@ body{
     background: transparent url('../img/back1.png'); */
 
 }
+#aboutDiv{
+  width: 50%;
+}
 #navb{
 	/*opacity: 0.6;*/
 }
