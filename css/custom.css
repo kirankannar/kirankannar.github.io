@@ -69,16 +69,16 @@ h1.name {
 	font-size: 3.5em;
 	font-weight: 800;
 	letter-spacing: 4px;
-	margin-top: 6%;
 	font-family: 'Gloria Hallelujah', sans-serif; }
 
 
 p.tagline{
 	font-size:1.2em;
-	color:#000;opacity:.6;
+	color:#000;opacity:.8;
 	line-height:1.25em;
 	/*margin: 0 5em 0; */
-	font-family: 'Gloria Hallelujah' cursive;}
+	font-family: 'Gloria Hallelujah' sans-serif;}
+
 
 p.desctext{
 	font-size:1.2em;
