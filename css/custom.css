@@ -36,8 +36,9 @@ width: 25%;
     
 }
 .img-circle.paypal{
-	padding-top: 7%;
-width: 50%;
+	
+width: 25%;
+overflow: no;
     
 }
 
@@ -85,7 +86,7 @@ p.tagline{
 
 p.desctext{
 	font-size:1.2em;
-	color:#000;opacity:.6;
+	color:#000;opacity:.7;
 	line-height:1.25em;
 	/*margin: 0 5em 0; */
 	font-family: 'Droid Sans', sans-serif;}
@@ -98,14 +99,16 @@ h3.desctext{
 
 .imagetitle{
 	font-size:1.5em;
-	color:#000;opacity:.6;
-	line-height:1.25em;
+	color:#000;
+	opacity:.6;
+	line-height:0.4em;
 	font-weight: bold;
 	/*margin: 0 5em 0; */
 	font-family: 'Droid Sans', sans-serif;
 }
 .kbdtext{
 	margin:0;
+	font-size:0.8em;
 font-family: 'Droid Sans', sans-serif;	
 }
 a.imgsmall{
@@ -123,6 +126,9 @@ a.imgsmall{
 }
 #quoraLogo {
 padding-bottom: 0.9em;
+}
+.work-text{
+  padding: 5px;
 }
 
 /*
