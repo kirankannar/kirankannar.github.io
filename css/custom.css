@@ -8,7 +8,6 @@ body{
     height: 100%;/* force the BODY element to match the height of the HTML element */
     /*font-size: 15px; 
     background: transparent url('../img/back1.png'); */
-
 }
 #aboutDiv{
   width: 50%;
@@ -28,20 +27,13 @@ body{
     box-shadow: 	2px 2px 7px rgb(184, 42, 8);
    }
 
-
 .img-circle.oracle{
-	
-width: 25%;
-
-    
+width: 25%; 
 }
 .img-circle.paypal{
-	
 width: 25%;
 overflow: no;
-    
 }
-
 .img-rounded.traffic{
 	width: 35%;
 }
