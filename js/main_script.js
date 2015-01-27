@@ -215,7 +215,22 @@ $("#down_to_projects").click(function(e) {
         $("#projects").show();
         $("#research").hide();
         $("#contact").hide();
-        
+         /*render default text from project[0] */
+        var jsonToRender = ProjectDetails[0];
+        //var image = '<img align="center" src="img\\' + jsonToRender.img + '" style="height:100px; width:100px;"/>';
+        var date = '<p align="center"><kbd>' + jsonToRender.date + '</kbd></p>';
+        var title = '<h3 align="center">' + jsonToRender.title + '</h3>';
+        var contents ='<p>' + jsonToRender.details + '</p>';
+        $("#project-date").html(date);
+        $("#project-title").html(title);
+        $("#project-contents").html(contents);
+        if(jsonToRender.link!=null)
+        {
+            var codeLink = '<p> <b>Code at </b><a target="_blank" href = "'+ jsonToRender.link + '">' + jsonToRender.link + '</a></p>';
+            $("#project-code").html(codeLink);
+        }
+        else
+            $("#project-code").html("");
 });
 $("#down_to_research").click(function(e) {
         
@@ -276,6 +291,22 @@ $("#to_projects").click(function(e) {
         $("#projects").show();
         $("#research").hide();
         $("#contact").hide();
+        /*render default text from project[0] */
+        var jsonToRender = ProjectDetails[0];
+        //var image = '<img align="center" src="img\\' + jsonToRender.img + '" style="height:100px; width:100px;"/>';
+        var date = '<p align="center"><kbd>' + jsonToRender.date + '</kbd></p>';
+        var title = '<h3 align="center">' + jsonToRender.title + '</h3>';
+        var contents ='<p>' + jsonToRender.details + '</p>';
+        $("#project-date").html(date);
+        $("#project-title").html(title);
+        $("#project-contents").html(contents);
+        if(jsonToRender.link!=null)
+        {
+            var codeLink = '<p> <b>Code at </b><a target="_blank" href = "'+ jsonToRender.link + '">' + jsonToRender.link + '</a></p>';
+            $("#project-code").html(codeLink);
+        }
+        else
+            $("#project-code").html("");
         
 });
 $("#to_research").click(function(e) {
