@@ -1,4 +1,7 @@
-
+$(window).load(function() {
+        // Animate loader off screen
+        $(".pre-load").fadeOut("slow");;
+    });
 /*disable right clicks or view source */
 window.oncontextmenu = function () {
    return false;
