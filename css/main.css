@@ -2,10 +2,10 @@ body {
   font-family: sans-serif;
   font-size:20px;
 }
-ol,ul{
+ol,ul {
 	list-style: none;
 }
-.stitle{
+.stitle {
 	font-family: "Helvetica Neue",Arial,sans-serif;
     font-weight: 700;
     font-size: 40px;
@@ -24,32 +24,32 @@ ol,ul{
     background:  url('../img/background.jpg') no-repeat 0 0;	
     color: #fff;
 }
-.menu{
+.menu {
 	opacity:0.9;
 	line-height:1.25em;
 	font-family: 'Droid Sans', sans-serif;
 }
-.navicon{
-	font-size:1.2em;
+.navicon {
+	font-size:2em;
 	color:white;
 	text-decoration: none !important;
 }
-.navicon_hidden{
+.navicon_hidden {
 	visibility: hidden;
 }
-.navicon:hover{
+.navicon:hover {
 	color:white;
-	font-size:1.3em;
+	font-size:2.1em;
 }
-.navicon:focus{
+.navicon:focus {
 	color:white;
-	font-size:1.3em;
+	font-size:2.1em;
 }
-.col-centered{
+.col-centered {
     float: none;
     margin: 0 auto;
 }
-.dp{
+.dp {
 	margin-top: 5em;
 	border-radius: 50%;
 	width: 7em;
@@ -57,16 +57,21 @@ ol,ul{
 	background-size: cover;
 	display:block;
 }
-h1.name{
+h1.name {
   font-size: 2.5em;
   display:block;
   font-family: 'Raleway', sans-serif;
 }
-.home-down{
+h2.tagline {
+  font-size: 1.5em;
+  display:block;
+  font-family: 'Raleway', sans-serif;
+}
+.home-down {
 	color:white;
 }
 /* Menu styling */
-.overlay{
+.overlay {
 	position: fixed;
 	left:0;
 	top:0;
@@ -74,16 +79,16 @@ h1.name{
 	height:100%;
 	background:rgba(255,50,10,0.9);
 }
-.o_hidden{
+.o_hidden {
 	visibility: hidden;
 }
-.menu_popup>.container>.row{
+.menu_popup>.container>.row {
 	padding: 60px 0 60px 0;
 }
-.menu_popup ul{
+.menu_popup ul {
 	list-style: none;
 }
-.menuitem{
+.menuitem {
 	color:white;
 	margin-bottom: 20px;
     margin-top: 5px;
@@ -91,26 +96,26 @@ h1.name{
     font-weight: 700;
     font-size: 2em;
 }
-.menuitem>a{
+.menuitem>a {
 text-decoration: none;
 color:white;
 }
-.menuitem>a:hover, .menuitem>a:focus{
+.menuitem>a:hover, .menuitem>a:focus {
 color:yellow;
 font-size: 1.1em;
 }
 
-.navicon_close{
+.navicon_close {
 	float:right;
 	padding-top:60px;
 	color:white;
 }
 
-.navicon_close:hover{
+.navicon_close:hover {
 	color:cyan;
 }
 /* About */
-section#about .bio{
+section#about .bio {
 	font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     font-size:20px;
@@ -124,51 +129,54 @@ section#about .bio{
 
 
 /*work*/
-#work{
+section#work {
 	background-color: #B3D675;
 }
-.work_block{
+section#work>.container>.row {
+	padding-bottom: 30px;
+}
+.work_block {
 	padding:15px;
 }
 section#work > a{
 	color:red;
 }
-section#work>.container>.stitle{
+section#work>.container>.stitle {
     color:#39275b;
 }
-#oracle_logo{
+#oracle_logo {
 	border: solid 4px #39275B;;   /*  */
 	border-radius: 50%;
 	width:6em;
 	overflow: no;
 }
-#paypal_logo{
+#paypal_logo {
 	border: solid 4px #39275B;;
 	border-radius: 50%;
 	width:6em;
 	overflow: no;
 }
-.work_title{
+.work_title {
 	margin-bottom: 20px;
     margin-top: 5px;
     font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     font-size: 25px;
 }
-.work_timeperiod{
+.work_timeperiod {
 	margin-bottom: 20px;
     margin-top: 5px;
     font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     font-size: 15px;
 }
-.work_desc_text{
+.work_desc_text {
 	font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     font-size:17px;   
     padding-bottom: 6px;
 }
-.read_more{
+.read_more {
 	margin:5px;
 	padding:5px;
  	border: solid 3px #45101B;
@@ -178,31 +186,31 @@ section#work>.container>.stitle{
     font-size:17px;
 
 }
-.work_info>a{
+.work_info>a {
 	text-decoration: none;
 	color:#222222;
 	margin-bottom:20px;
 }	
-.work_info>a:hover, .work_info>a:focus{
+.work_info>a:hover, .work_info>a:focus {
 	color:#fff;
 	background-color:#45101B;
 }
 
 
 /*------ Projects ---- */
-section#projects{
+section#projects {
 	background-color:#f8f8f8;
 }
-section#projects>.container>.row>.col-md-6:hover{
+section#projects>.container>.row>.col-md-6:hover {
 	
 	border-radius: 10px;
 	background-color: #f0f0f0;
 
 }
-section#projects>.container>.stitle{
+section#projects>.container>.stitle {
 color:#800800;
 }
-.plink{
+.plink {
   font-weight: bold;
 }
 .lead {
@@ -224,10 +232,10 @@ color:#800800;
 }
 
 /* Writing */
-section#writing>.container>.stitle{
+section#writing>.container>.stitle {
 color:#005A31;
 }
-.write_title{
+.write_title {
 	margin-bottom: 20px;
     margin-top: 5px;
     font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -237,17 +245,17 @@ color:#005A31;
 .write_title >a {
 	text-decoration: none;
 }
-.write_summary_text{
+.write_summary_text {
 	font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;   
 }
-.write_desc_text{
+.write_desc_text {
 	font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     font-size:0.83em;   
     padding-bottom: 6px;
 }
-section#writing .write_list_item{
+section#writing .write_list_item {
 	float:left;
 	display: inline-block;
 	border-radius: 5%;
@@ -263,34 +271,34 @@ section#writing .write_list_item{
 	overflow: hidden;
 	box-shadow: inset 2px 2px 5px 0px rgba(0,0,0,0.75);
 }
-section#writing .write_list_item:hover, section#writing .write_list_item:focus{
+section#writing .write_list_item:hover, section#writing .write_list_item:focus {
 	border:solid 2px #000;
 	box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
 }
-section#writing #she{
+section#writing #she {
 	 background-color :#f1b605;
 }
-section#writing #silkboard{
+section#writing #silkboard {
 	 background-color :#b1b605;
 }
-section#writing #amble{
+section#writing #amble {
 	 background-color :#DF7065;
 }
-section#writing #LA{
+section#writing #LA {
 	 background-color :#118C4E;
 }
-section#writing #interstellar{
+section#writing #interstellar {
 	 background-color :#6DBDD6;
 }
-section#writing #deadgirl{
+section#writing #deadgirl {
 	 background-color :#B71427;
 }
 
 /* --- contact ---*/
-section#connect{
+section#connect {
 	background-color: #000;
 }
-section#connect	>.container>.stitle{
+section#connect	>.container>.stitle {
 color:#F3FAB6;
 }
 section#connect li {
@@ -299,15 +307,15 @@ section#connect li {
 	font-size: 17px;
 	letter-spacing: 2px;
 }
-section#connect ul li:not(:first-child):before{
+section#connect ul li:not(:first-child):before {
 	content: ".";
 	padding-right: 20px;
 }
-section#connect .mail{
+section#connect .mail {
 	margin: 0 auto;
 	padding:10px 0 30px 0;
 }
-section#connect .mail>a{
+section#connect .mail>a {
 	margin:5px;
 	padding:10px;
  	border: solid 3px #bebebe;
@@ -318,45 +326,86 @@ section#connect .mail>a{
     text-decoration: none;
     letter-spacing: 2px;
 }
-section#connect .mail>a:hover,section#connect .mail>a:focus{
+section#connect .mail>a:hover,section#connect .mail>a:focus {
 	background-color: #bebebe;
 	color:#000;
 }
-section#connect .smalltext{
+section#connect .smalltext {
 	font-size:10px;
 	font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
 	color:#bebebe;
 }
 
 /*no page */
-section#lol{
-	
-}
-.nopage{
+.nopage {
 	margin:0 auto;
 	vertical-align: middle;
-	padding:100px;
+	padding:50px 80px 20px 80px;
 }
-.nopage:after{
-	content: url("../img/Butterfly.jpg");
+.nopage .emphasis {
+	color:red;
+	font: 600 2em 'Comic Sans Pro';
 }
+
+/* work chapters */
+section#oracle,section#paypal {
+margin: 0 auto;
+vertical-align: middle;
+}
+section#oracle .oracle_header, section#paypal .paypal_header {
+	font: 900 2.5em "Comic Sans serif";
+	border-bottom: 5px solid #444;
+	padding: 0 20px 10px 20px;
+	display: block;
+	margin-bottom: 40px ;
+	max-width: 640px;
+}
+section#oracle .oracle_text,section#paypal .paypal_text {
+	margin: 0 auto;
+	vertical-align: middle;
+	display: block;
+	max-width: 640px;
+	font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 20px;
+	line-height: 1.5em;
+	padding-bottom: 1em;
+
+}
+section#oracle .oracle_access {
+	width:20em;
+}
+section#paypal .paypal_text>img {
+	width:12em;
+}
+section#oracle .back,section#paypal .back {
+	padding: 0.15em 0.5em;
+	margin-bottom: 1em;
+	background-color: #45101B;
+	border: solid 3px #45101B;
+	border-radius: 10%;
+	color:#FFF;
+	font: 800 20px "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+section#oracle .back:hover,section#oracle .back:focus, section#paypal .back:hover,section#paypal .back:focus {
+	border: solid 3px orange;
+}
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 
-	h1.name{
+	/*h1.name{
 	  font-size: 1.6em;
 	  display:block;
-	}
-	section#about .bio{
+	} */
+	section#about .bio {
     font-size:17px;
 	margin: 0 auto;
 	text-align: justify;
 	width: 100%;
 	padding-bottom: 30px;
 	line-height: 1.5;
-	
-}
-	section#writing .write_list_item{
+	}
+	section#writing .write_list_item {
 		float:none;
 		display: block;
 		border-radius: 5%;
@@ -370,5 +419,8 @@ section#lol{
 		text-decoration: none;
 		box-shadow: inset 2px 2px 5px 0px rgba(0,0,0,0.75);
     }
+    section#oracle .oracle_header {
+		font-size: 2em;
+	}
 }
 
