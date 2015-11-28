@@ -380,6 +380,10 @@ section#oracle .oracle_text,section#paypal .paypal_text {
 	padding-bottom: 1em;
 
 }
+section#paypal h3{
+	font-weight: 600;
+	font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
 section#oracle .oracle_access {
 	width:20em;
 }
