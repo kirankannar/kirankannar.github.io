@@ -87,6 +87,7 @@ h2.tagline {
 	width:100%;
 	height:100%;
 	background:rgba(255,50,10,0.9);
+    z-index: 1000;
 }
 .o_hidden {
 	visibility: hidden;
@@ -241,8 +242,13 @@ color:#800800;
 }
 
 /* Writing */
+section#writing {
+    /*background-color:rgba(200, 147, 27, 0.2); */
+    background: url(../img/Wood.jpeg) ;
+    color:white;
+}
 section#writing>.container>.stitle {
-color:#005A31;
+    color:black;
 }
 .write_title {
 	margin-bottom: 20px;
@@ -253,6 +259,11 @@ color:#005A31;
 }
 .write_title >a {
 	text-decoration: none;
+    color:black;
+}
+.write_title >a:hover, .write_title >a:focus{
+    text-decoration: none;
+    color:white;
 }
 .write_summary_text {
 	font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -274,6 +285,7 @@ section#writing .write_list_item {
     font-weight: 600;
     font-size: 17px;
 	margin: 15px;
+    margin-bottom:20px;
 	width:30%;
 	height:200px;
 	text-decoration: none;
@@ -284,23 +296,23 @@ section#writing .write_list_item:hover, section#writing .write_list_item:focus {
 	border:solid 2px #000;
 	box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
 }
-section#writing #she {
-	 background-color :#f1b605;
+section#writing #amble {
+     background-color :rgba(108, 79, 49, 0.8);
 }
 section#writing #silkboard {
-	 background-color :#b1b605;
+     background-color : rgba(6, 100, 82, 0.8);
 }
-section#writing #amble {
-	 background-color :#DF7065;
+section#writing #she {
+	 background-color :rgba(255, 102, 0, 0.8);
 }
 section#writing #LA {
-	 background-color :#118C4E;
-}
-section#writing #interstellar {
-	 background-color :#6DBDD6;
+	 background-color :rgba(17, 140, 78, 0.8);
 }
 section#writing #deadgirl {
-	 background-color :#B71427;
+     background-color :rgba(183, 20, 39, 0.8);
+}
+section#writing #interstellar {
+	 background-color :rgba(51, 51, 102, 0.8);
 }
 
 /* --- contact ---*/
