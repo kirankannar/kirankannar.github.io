@@ -145,6 +145,12 @@ section#work {
 section#work>.container>.row {
 	padding-bottom: 30px;
 }
+section#work>.container>.row>.col-md-6:hover {
+    
+    border-radius: 10px;
+    background-color: #B3D660;
+
+}
 .work_block {
 	padding:15px;
 }
