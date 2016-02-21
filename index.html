@@ -53,11 +53,11 @@
 	<section  id="about">
 			<div class="container">
 				<div class="row">
-					<h2 class="stitle text-center">About</h2>
+					<h2 class="stitle text-center" tabindex="-1">About</h2>
 					<div class="col-md-12 text-center">
 						<p class="bio" style="text-align:center"> Hi there! </p>
 						<p class="bio">
-I am Kiran Kannar, working currently as a Software Developer for <a target="_blank" href="http://www.oracle.com/"><b>Oracle</b></a> at <a target="_blank" href="https://en.wikipedia.org/wiki/Bangalore"><b>Bengaluru</b></a>.
+I am Kiran Kannar, working currently as a Software Engineer for <a target="_blank" href="http://www.oracle.com/"><b>Oracle</b></a> at <a target="_blank" href="https://en.wikipedia.org/wiki/Bangalore"><b>Bengaluru</b></a>.
 I completed my Bachelor's degree in Computer Science at <a target="_blank" href="http://www.rvce.edu.in"><b>R.V. College of Engineering</b></a> in 2014. <br/><br/>
 I love UI, particularly in visualizing various kinds of data.
 I am also interested in challenges associated with utilizing the vast amount of data on the Web to solve real-world problems.
@@ -71,7 +71,7 @@ I love football and I am a <a target="_blank" href="https://www.arsenal.com/"><b
 	</section>
 	<section id="work">
 		<div class="container">
-			<h2 class="stitle text-center">WORK</h2>
+			<h2 class="stitle text-center" tabindex="-1">WORK</h2>
 			<div class="row">
 				<div class="col-md-6 work_block">
 					<div class="row text-center">
@@ -108,7 +108,7 @@ I love football and I am a <a target="_blank" href="https://www.arsenal.com/"><b
 	</section>
 	<section id="projects">
 		<div class="container">
-			<h2 class="stitle text-center">PROJECTS</h2>
+			<h2 class="stitle text-center" tabindex="-1">PROJECTS</h2>
 			<div class="row">
 				<div class="col-md-6 col-lg-6">
 					<hr class="section-heading-spacer">
@@ -184,7 +184,7 @@ I love football and I am a <a target="_blank" href="https://www.arsenal.com/"><b
 	</section>
 	<section id="writing">
 		<div class="container">
-				<h2 class="stitle text-center">I Write</h2>
+				<h2 class="stitle text-center" tabindex="-1">I Write</h2>
 				<div class="row">
 					<p class="write_summary_text text-center">I love to pen down my musings and scribble short stories. </p>			
 				</div>
@@ -222,7 +222,7 @@ I love football and I am a <a target="_blank" href="https://www.arsenal.com/"><b
 	</section>
 	<section id="connect">
 		<div class="container">
-				<h2 class="stitle text-center">Connect</h2>
+				<h2 class="stitle text-center" tabindex="-1">Connect</h2>
 				<div class="row">
 					<ul class="list-inline text-center" id="faviconlist">
 							       			 <li><a href="http://www.linkedin.com/in/kannarkk" role="button" target="_blank" aria-describedby="My LinkedIn profile">
@@ -244,20 +244,20 @@ I love football and I am a <a target="_blank" href="https://www.arsenal.com/"><b
 
 		</div>
 	</section>
-	<div id="menu_popup" class="overlay o_hidden" >
+	<div id="menu_popup" class="overlay o_hidden" onkeydown="keyboardhandler(this,event);">
 		<div class="container">
 					<div class="row">
 						<div class="col-md-offset-6 col-sm-offset-6 col-xs-offset-6 col-md-6 col-sm-6 col-xs-6 text-right menu" style="float:right">
-							<a href="#" id="menu_close" class="navicon_close" tabindex="6"><i class="fa fa-close fa-2x"></i></a>
+							<a href="#" id="menu_close" onkeydown="trapfocus(this,event);" class="navicon_close" tabindex="6"><i class="fa fa-close fa-2x" role="button"></i></a>
 						</div>
 					</div>
 					<div class="row text-center" >
-						<ul id="menulist">
-							<li class="menuitem"><a href="#about" tabindex="1">About</a></li>
-							<li class="menuitem"><a href="#work" tabindex="2">Work </a></li>
-							<li class="menuitem"><a href="#projects" tabindex="3">Projects</a></li>
-							<li class="menuitem"><a href="#writing" tabindex="4">I write</a></li>
-							<li class="menuitem"><a href="#connect	" tabindex="5">Let's Connect</a></li>
+						<ul id="menulist" role="menu">
+							<li class="menuitem" role="menu-item"><a href="#about" tabindex="1">About</a></li>
+							<li class="menuitem" role="menu-item"><a href="#work" tabindex="2">Work </a></li>
+							<li class="menuitem" role="menu-item"><a href="#projects" tabindex="3">Projects</a></li>
+							<li class="menuitem" role="menu-item"><a href="#writing" tabindex="4">I write</a></li>
+							<li class="menuitem" role="menu-item"><a href="#connect	" tabindex="5">Let's Connect</a></li>
 						</ul>
 					</div>
 		</div>
