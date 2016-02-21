@@ -251,6 +251,7 @@ color:#800800;
 section#writing {
     /*background-color:rgba(200, 147, 27, 0.2); */
     background: url(../img/Wood.jpeg) ;
+    background-size:cover;
     color:white;
 }
 section#writing>.container>.stitle {
