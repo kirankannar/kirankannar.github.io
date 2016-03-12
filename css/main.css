@@ -6,10 +6,10 @@ ol,ul {
 	list-style: none;
 }
 .stitle {
-	font-family: "Helvetica Neue",Arial,sans-serif;
-    font-weight: 700;
-    font-size: 40px;
-    letter-spacing: 5px;
+	font-family: 'Londrina Shadow', cursive;
+    font-weight: 900;
+    font-size: 50px;
+    letter-spacing: 7px;
     text-transform: uppercase;
     text-align: center !important;
     padding: 20px 0;
@@ -144,12 +144,6 @@ section#work {
 }
 section#work>.container>.row {
 	padding-bottom: 30px;
-}
-section#work>.container>.row>.col-md-6:hover {
-    
-    border-radius: 10px;
-    background-color: #B3D660;
-
 }
 .work_block {
 	padding:15px;
@@ -304,22 +298,23 @@ section#writing .write_list_item:hover, section#writing .write_list_item:focus {
 	box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);
 }
 section#writing #amble {
-     background-color :rgba(108, 79, 49, 0.8);
+    background-color :rgba(108, 79, 49, 0.8);
+    /*background: -webkit-linear-gradient(bottom,rgba(108,79,49,0.8), rgba(108,79,49,0.3));*/
 }
 section#writing #silkboard {
-     background-color : rgba(6, 100, 82, 0.8);
+    background-color : rgba(6, 100, 82, 0.8);
 }
 section#writing #she {
-	 background-color :rgba(255, 102, 0, 0.8);
+	background-color :rgba(255, 102, 0, 0.8);
 }
 section#writing #LA {
-	 background-color :rgba(17, 140, 78, 0.8);
+	background-color :rgba(17, 140, 78, 0.8);
 }
 section#writing #deadgirl {
-     background-color :rgba(183, 20, 39, 0.8);
+    background-color :rgba(183, 20, 39, 0.8);
 }
 section#writing #interstellar {
-	 background-color :rgba(51, 51, 102, 0.8);
+	background-color :rgba(51, 51, 102, 0.8);
 }
 
 /* --- contact ---*/
@@ -345,7 +340,7 @@ section#connect .mail {
 }
 section#connect .mail>a {
 	margin:5px;
-	padding:10px;
+	padding: 5px 10px;
  	border: solid 3px #bebebe;
  	border-radius: 5%;
 	font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
