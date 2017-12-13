@@ -125,7 +125,7 @@ font-size: 1.1em;
 	color:cyan;
 }
 /* About */
-section#about .bio {
+section#about .writer {
 	font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     font-size:20px;
@@ -137,6 +137,36 @@ section#about .bio {
 	
 }
 
+/*research*/
+section#research {
+    background-color: #CAEBF2;
+}
+
+section#research .writer {
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    font-size:20px;
+    margin: 0 auto;
+    text-align: justify;
+    width: 760px;
+    line-height: 1.5;
+    
+}
+
+section#research  .section-heading {
+    /*margin-bottom: 20px; */
+    margin-top: 5px;
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+section#research  .section-heading-spacer {
+    /*width: 760px;*/
+    border-top: 3px solid #a1b1c1;
+    margin-left: 30%;
+    width: 40%;
+}
 
 /*work*/
 section#work {
@@ -153,6 +183,12 @@ section#work > a{
 }
 section#work>.container>.stitle {
     color:#39275b;
+}
+#salesforce_logo {
+    border: solid 4px #39275B;;   /*  */
+    border-radius: 50%;
+    width:6em;
+    overflow: no;
 }
 #oracle_logo {
 	border: solid 4px #39275B;;   /*  */
@@ -229,7 +265,7 @@ color:#800800;
     font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;    
 }
 .section-heading {
-    margin-bottom: 20px;
+    /*margin-bottom: 20px; */
     margin-top: 5px;
     font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
