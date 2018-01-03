@@ -30,7 +30,7 @@ ol,ul {
     padding: 60px 0 60px 0;
     min-height: 760px;
     background-size: cover;
-    background:  url('../img/background.jpg') repeat-x 0 0;
+    background:  url('../img/geisel.jpg') no-repeat center center fixed;
     color: #fff;
 }
 .menu {
@@ -86,7 +86,8 @@ h2.tagline {
 	top:0;
 	width:100%;
 	height:100%;
-	background:rgba(255,50,10,0.9);
+	/*background:rgba(255,50,10,0.9); */
+    background: rgba(91, 62, 216,0.92);
     z-index: 1000;
 }
 .o_hidden {
@@ -131,7 +132,7 @@ section#about .writer {
     font-size:20px;
 	margin: 0 auto;
 	text-align: justify;
-	width: 760px;
+	width: 68%;
 	padding-bottom: 30px;
 	line-height: 1.5;
 	
@@ -148,7 +149,7 @@ section#research .writer {
     font-size:20px;
     margin: 0 auto;
     text-align: justify;
-    width: 760px;
+    width: 68%;
     line-height: 1.5;
     
 }
@@ -352,6 +353,38 @@ section#writing #deadgirl {
 section#writing #interstellar {
 	background-color :rgba(51, 51, 102, 0.8);
 }
+
+/* --- teaching ---*/
+section#teaching {
+    background-color: #CAEBF2;
+}
+
+section#teaching .writer {
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    font-size:20px;
+    margin: 0 auto;
+    text-align: justify;
+    width: 68%;
+    line-height: 1.5;
+    
+}
+
+section#teaching  .section-heading {
+    /*margin-bottom: 20px; */
+    margin-top: 5px;
+    font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+section#teaching  .section-heading-spacer {
+    /*width: 760px;*/
+    border-top: 3px solid #a1b1c1;
+    margin-left: 30%;
+    width: 40%;
+}
+
 
 /* --- contact ---*/
 section#connect {
