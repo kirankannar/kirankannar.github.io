@@ -66,6 +66,14 @@ ol,ul {
 	background-size: cover;
 	display:block;
 }
+.dp2 {
+    margin-top: 5em;
+    border-radius: 50%;
+    width: 7em;
+    height:9em;
+    background-size: cover;
+    display:block;
+}
 h1.name {
   font-size: 2.5em;
   display:block;
