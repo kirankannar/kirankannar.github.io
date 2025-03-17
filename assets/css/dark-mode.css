@@ -1,0 +1,107 @@
+:root[data-theme="dark"] {
+  --background-color: #1a1a1a;
+  --text-color: #e6e6e6;
+  --link-color: #6ab0f3;
+  --heading-color: #ffffff;
+  --border-color: #404040;
+  --code-background: #2d2d2d;
+  --nav-background: #252525;
+  --nav-text: #e6e6e6;
+  --nav-hover: #6ab0f3;
+  --masthead-background: #252525;
+  --search-background: #333333;
+  --search-text: #e6e6e6;
+}
+
+:root[data-theme="light"] {
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --link-color: #1a75ff;
+  --heading-color: #000000;
+  --border-color: #e6e6e6;
+  --code-background: #f8f9fa;
+  --nav-background: #ffffff;
+  --nav-text: #333333;
+  --nav-hover: #1a75ff;
+  --masthead-background: #ffffff;
+  --search-background: #f8f9fa;
+  --search-text: #333333;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+a {
+  color: var(--link-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--heading-color);
+}
+
+pre, code {
+  background-color: var(--code-background);
+}
+
+/* Navigation styling */
+.masthead {
+  background-color: var(--masthead-background);
+}
+
+.masthead__inner-wrap {
+  background-color: var(--nav-background);
+}
+
+.greedy-nav {
+  background-color: var(--nav-background);
+}
+
+.greedy-nav a,
+.greedy-nav .visible-links a {
+  color: var(--nav-text);
+}
+
+.greedy-nav a:hover,
+.greedy-nav .visible-links a:hover {
+  color: var(--nav-hover);
+}
+
+/* Search box styling */
+.search__toggle {
+  color: var(--nav-text);
+}
+
+.search__toggle:hover {
+  color: var(--nav-hover);
+}
+
+.search-content {
+  background-color: var(--search-background);
+}
+
+.search-content .search-input {
+  color: var(--search-text);
+  background-color: var(--search-background);
+}
+
+/* Site title */
+.site-title {
+  color: var(--nav-text);
+}
+
+/* Dark mode toggle button styling */
+.dark-mode-toggle {
+  color: var(--nav-text);
+  transition: color 0.2s ease;
+}
+
+.dark-mode-toggle:hover {
+  color: var(--nav-hover);
+}
+
+/* Adjust spacing between nav items */
+.greedy-nav .dark-mode-toggle {
+  margin-right: 5px;
+} 

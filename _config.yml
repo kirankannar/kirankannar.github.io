@@ -34,18 +34,24 @@ defaults:
       author_profile: true # Add this if you want the author sidebar
 
 masthead_title: "Vector & Verse"
-
+it
 author:
   name: "Kiran Kannar"
   avatar: "img/dp3.jpg"
   bio: "I blog about ML, NLP, and living in SF."
   links:
+    - label: "LinkedIn"
+      icon: "fab fa-linkedin"
+      url: "https://www.linkedin.com/in/kannarkk/"
     - label: "GitHub"
       icon: "fab fa-github"
       url: "https://github.com/kannarkk"
     - label: "Twitter"
       icon: "fab fa-twitter"
       url: "https://twitter.com/kannarkk"
+    - label: "Email"
+      icon: "fas fa-envelope"
+      url: "mailto:kiran.kannar@gmail.com"
 
 timezone: America/San_Francisco
 
