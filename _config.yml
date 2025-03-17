@@ -1,6 +1,6 @@
 title: "Vector & Verse"
 description: "Personal blog exploring artificial intelligence and life, as I know it."
-theme: minimal-mistakes-jekyll
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 url: "https://kannarkk.github.io"
 baseurl: ""
 
@@ -15,6 +15,7 @@ kramdown:
   syntax_highlighter: rouge
 
 plugins:
+  - jekyll-remote-theme
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
