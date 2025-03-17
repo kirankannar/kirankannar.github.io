@@ -1,0 +1,10 @@
+main:
+  - title: "Home"
+    url: "/"
+  - title: "About"
+    url: "/about/"
+  - title: "Resume"
+    url: "/docs/resume.pdf"
+  - title: "Tags"
+    url: "/tags/"
+
