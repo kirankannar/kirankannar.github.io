@@ -37,7 +37,7 @@ defaults:
 masthead_title: "Vector & Verse"
 author:
   name: "Kiran Kannar"
-  avatar: "img/dp3.jpg"
+  avatar: "img/dp.jpg"
   bio: "I blog about ML, NLP, and living in SF."
   links:
     - label: "LinkedIn"
